@@ -40,7 +40,6 @@ export default async function Home() {
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Hero Section */}
         <section className="mb-24 flex flex-col items-center text-center">
-          <Image src={'/rick.png'} height={100} width={150} className="rounded-full mb-4" alt="rick"/>
           <h1 className="font-light text-5xl md:text-6xl mb-4 tracking-tight animate-in fade-in-50 slide-in-from-bottom-5 duration-700">
             MUHAMMED SIRAJUDEEN
           </h1>
