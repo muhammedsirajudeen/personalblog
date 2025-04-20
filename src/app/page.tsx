@@ -36,31 +36,31 @@ export default async function Home() {
               <Mail size={16} /> muhammedsirajudeen29@gmail.com
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/muhammedsirajudeen"
               className="flex items-center gap-1 hover:text-[#60a5fa] transition-colors"
             >
               <Linkedin size={16} /> LinkedIn
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/muhammedsirajudeen"
               className="flex items-center gap-1 hover:text-[#60a5fa] transition-colors"
             >
               <Github size={16} /> Github
             </a>
             <a
-              href="https://medium.com/@yourusername"
+              href="https://medium.com/@muhammedsirajudeen"
               className="flex items-center gap-1 hover:text-[#60a5fa] transition-colors"
             >
               <ExternalLink size={16} /> Medium
             </a>
             <a
-              href="https://dev.to/yourusername"
+              href="https://dev.to/muhammedsirajudeen"
               className="flex items-center gap-1 hover:text-[#60a5fa] transition-colors"
             >
               <ExternalLink size={16} /> Dev.to
             </a>
             <a
-              href="https://leetcode.com/yourusername"
+              href="https://leetcode.com/muhammedsirajudeen"
               className="flex items-center gap-1 hover:text-[#60a5fa] transition-colors"
             >
               <ExternalLink size={16} /> Leetcode
