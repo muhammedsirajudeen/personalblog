@@ -158,7 +158,7 @@ export default async function Home() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <a href="https://medium.com/@yourusername" className="group" target="_blank" rel="noopener noreferrer">
+            <a href="https://medium.com/@muhammedsirajudeen" className="group" target="_blank" rel="noopener noreferrer">
               <Card className="overflow-hidden h-full border-none shadow-md group-hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-[#111114] to-[#0a0a0c]">
                 <CardContent className="p-0">
                   <div className="flex items-center justify-between p-6">
@@ -182,7 +182,7 @@ export default async function Home() {
               </Card>
             </a>
 
-            <a href="https://dev.to/yourusername" className="group" target="_blank" rel="noopener noreferrer">
+            <a href="https://dev.to/muhammedsirajudeen" className="group" target="_blank" rel="noopener noreferrer">
               <Card className="overflow-hidden h-full border-none shadow-md group-hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-[#111114] to-[#0a0a0c]">
                 <CardContent className="p-0">
                   <div className="flex items-center justify-between p-6">
@@ -218,19 +218,19 @@ export default async function Home() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/muhammedsirajudeen"
                 className="text-[#a0a0b0] hover:text-[#60a5fa] transition-colors"
               >
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://linkedin.com/in/muhammedsirajudeen"
                 className="text-[#a0a0b0] hover:text-[#60a5fa] transition-colors"
               >
                 <Linkedin size={18} />
               </a>
               <a
-                href="https://medium.com/@yourusername"
+                href="https://medium.com/@muhammedsirajudeen"
                 className="text-[#a0a0b0] hover:text-[#60a5fa] transition-colors"
               >
                 <ExternalLink size={18} />
