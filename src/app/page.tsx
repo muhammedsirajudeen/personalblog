@@ -4,7 +4,6 @@ import path from "path"
 import { ExternalLink, FileText, Github, Linkedin, Mail, Terminal, ChevronRight, Calendar } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
 
 export default async function Home() {
   const postsDir = path.join(process.cwd(), "src/posts")
@@ -12,30 +11,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0c] text-[#e2e2e6]">
-      <header className="sticky top-0 z-10 backdrop-blur-sm bg-[#0a0a0c]/90 border-b border-[#1e1e24]">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-          <Link href="/" className="font-semibold text-lg tracking-tight">
-            <Image src={'/rick.jpeg'} height={30} width={30} className="rounded-full" alt="rick"/>
-          </Link>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="#about" className="text-sm font-medium hover:text-[#60a5fa] transition-colors">
-              About
-            </Link>
-            <Link href="#tech" className="text-sm font-medium hover:text-[#60a5fa] transition-colors">
-              Tech
-            </Link>
-            <Link href="#projects" className="text-sm font-medium hover:text-[#60a5fa] transition-colors">
-              Projects
-            </Link>
-            <Link href="#blog" className="text-sm font-medium hover:text-[#60a5fa] transition-colors">
-              Blog
-            </Link>
-            <Link href="#writing" className="text-sm font-medium hover:text-[#60a5fa] transition-colors">
-              Writing
-            </Link>
-          </nav>
-        </div>
-      </header>
+
 
       <main className="max-w-6xl mx-auto px-4 py-12">
         {/* Hero Section */}
@@ -110,8 +86,8 @@ export default async function Home() {
           </div>
 
           <Card className="border-none shadow-lg bg-gradient-to-br from-[#111114] to-[#0a0a0c]">
-            <CardContent className="p-8">
-              <p className="text-lg text-card-foreground/90 leading-relaxed">
+            <CardContent className="p-8 ">
+              <p className="text-sm text-card-foreground/90 leading-relaxed">
                 A passionate Software Engineer with extensive hands-on experience across multiple tech stacks, driven by
                 curiosity and a deep interest in problem-solving. Has been building software for over half a decade,
                 with broad exposure to various technologies, and currently specializes in developing scalable systems
