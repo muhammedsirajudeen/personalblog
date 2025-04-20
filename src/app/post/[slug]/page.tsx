@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 interface PostPageProps {
-  params: { slug: string }
+  params:Promise< { slug: string }>
 }
 
 export default async function PostPage({ params }: PostPageProps) {
