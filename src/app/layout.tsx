@@ -14,11 +14,12 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: "Muhammed Sirajudeen | Full Stack Engineer | Researcher | Indie Hacker",
-  description: "Portfolio of Muhammed Sirajudeen, a MERN Stack Developer with experience in multiple tech stacks.",
+  title: "Muhammed Sirajudeen | Freelancer from Kerala | Full Stack Engineer | Software Developer",
+  description: "Portfolio of Muhammed Sirajudeen, a freelancer from Kerala specializing in MERN Stack Development and other modern technologies.",
+  keywords: ["Muhammed Sirajudeen","muhammed sirajudeen","freelancer", "kerala", "full stack engineer", "software developer", "mern stack"],
   openGraph: {
-    title: "Muhammed Sirajudeen | Full Stack Engineer | Researcher | Indie Hacker",
-    description: "Portfolio of Muhammed Sirajudeen, a MERN Stack Developer with experience in multiple tech stacks.",
+    title: "Muhammed Sirajudeen | Freelancer from Kerala | Full Stack Engineer | Software Developer",
+    description: "Portfolio of Muhammed Sirajudeen, a freelancer from Kerala specializing in MERN Stack Development and other modern technologies.",
     url: "https://yourwebsite.com",
     type: "website",
     images: [
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammed Sirajudeen | Full Stack Engineer | Researcher | Indie Hacker",
-    description: "Portfolio of Muhammed Sirajudeen, a MERN Stack Developer with experience in multiple tech stacks.",
+    title: "Muhammed Sirajudeen | Freelancer from Kerala | Full Stack Engineer | Software Developer",
+    description: "Portfolio of Muhammed Sirajudeen, a freelancer from Kerala specializing in MERN Stack Development and other modern technologies.",
     images: ["https://yourwebsite.com/og-image.jpg"],
   },
 }
