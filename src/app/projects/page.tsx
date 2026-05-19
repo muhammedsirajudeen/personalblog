@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Muhammed Sirajudeen",
     images: [
       {
-        url: "/og/projects-og.png",
+        url: "/profile/personal-og.png",
         width: 1200,
         height: 630,
         alt: "Muhammed Sirajudeen Projects",
