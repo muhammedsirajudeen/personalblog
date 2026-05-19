@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Selected Work | Muhammed Sirajudeen",
     description:
       "Explore selected projects spanning SaaS, community platforms, and modern web experiences.",
-    url: "https://yourdomain.com/projects",
+    url: "https://muhammedsirajudeen.in/projects",
     siteName: "Muhammed Sirajudeen",
     images: [
       {
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
     title: "Selected Work | Muhammed Sirajudeen",
     description:
       "Explore selected projects spanning SaaS, community platforms, and modern web experiences.",
-    images: ["/og/projects-og.png"],
+    images: ["/profile/personal-og.png"],
   },
   alternates: {
-    canonical: "https://yourdomain.com/projects",
+    canonical: "https://muhammedsirajudeen.in/projects",
   },
 };
 
