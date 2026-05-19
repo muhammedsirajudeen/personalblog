@@ -41,6 +41,7 @@ export const metadata: Metadata = {
       "Explore selected projects spanning SaaS, community platforms, and modern web experiences.",
     images: ["/profile/personal-og.png"],
   },
+  
   alternates: {
     canonical: "https://muhammedsirajudeen.in/projects",
   },
