@@ -3,7 +3,9 @@ import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { Space_Grotesk } from 'next/font/google';
 
-import NavBar from "@/components/NavBar";
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 import "./globals.css"
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -48,8 +50,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${spaceGrotesk.className} bg-white text-gray-900`}>
         <Analytics/>
-        <NavBar/>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )

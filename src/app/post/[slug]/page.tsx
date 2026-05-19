@@ -6,28 +6,32 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 interface PostPageProps {
-  params:Promise< { slug: string }>
+  params: Promise<{ slug: string }>
 }
 
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params
+
   const filePath = path.join(process.cwd(), "src/posts", slug)
   const fileContent = await readFile(filePath, "utf-8")
+
   const { data, content } = matter(fileContent)
   const htmlContent = marked(content)
 
   return (
-    <div className="min-h-screen bg-black text-white">
-
-      <main className="container mx-auto px-4 py-12 max-w-3xl">
-        <Link href="/#blog" className="flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-8">
+    <div className="min-h-screen bg-white text-black">
+      <main className="mx-auto w-full max-w-3xl px-6 py-16">
+        <Link
+          href="/#blog"
+          className="mb-10 inline-flex items-center gap-2 text-sm text-neutral-500 transition hover:text-black"
+        >
           <ArrowLeft size={16} />
           <span>Back to all posts</span>
         </Link>
 
-        <article className="prose prose-invert max-w-none">
+        <article>
           {data.date && (
-            <div className="text-gray-400 mb-8">
+            <div className="mb-4 text-sm text-neutral-500">
               {new Date(data.date).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
@@ -36,37 +40,49 @@ export default async function PostPage({ params }: PostPageProps) {
             </div>
           )}
 
+          <h1 className="mb-6 text-4xl font-semibold tracking-tight">
+            {data.title}
+          </h1>
+
           {data.tags && (
-            <div className="flex gap-2 mb-8">
+            <div className="mb-10 flex flex-wrap gap-2">
               {data.tags.map((tag: string) => (
-                <span key={tag} className="px-3 py-1 bg-gray-800 rounded-full text-sm">
+                <span
+                  key={tag}
+                  className="rounded-full border border-neutral-300 px-3 py-1 text-sm text-neutral-700"
+                >
                   {tag}
                 </span>
               ))}
             </div>
           )}
 
-          <div dangerouslySetInnerHTML={{ __html: htmlContent }} className="leading-relaxed" />
+          <div
+            className="
+              max-w-none
+              prose-headings:font-semibold
+              prose-headings:tracking-tight
+              prose-p:text-neutral-700
+              prose-p:leading-8
+              prose-a:text-black
+              prose-a:no-underline
+              hover:prose-a:underline
+              prose-code:text-black
+              prose-pre:bg-neutral-100
+              prose-pre:text-black
+              prose-strong:text-black
+              prose-blockquote:border-neutral-300
+              prose-blockquote:text-neutral-600
+              prose-li:text-neutral-700
+              prose-img:rounded-xl
+              text-black
+            "
+            dangerouslySetInnerHTML={{ __html: htmlContent }}
+          />
         </article>
       </main>
 
-      {/* Footer */}
-      <footer className="container mx-auto px-4 py-8 border-t border-gray-800 mt-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-400">© {new Date().getFullYear()} Muhammed Sirajudeen</div>
-          <div className="flex gap-4">
-            <a href="mailto:muhammedsirajudeen29@gmail.com" className="text-gray-400 hover:text-white">
-              Email
-            </a>
-            <a href="https://linkedin.com" className="text-gray-400 hover:text-white">
-              LinkedIn
-            </a>
-            <a href="https://github.com" className="text-gray-400 hover:text-white">
-              GitHub
-            </a>
-          </div>
-        </div>
-      </footer>
+
     </div>
   )
 }
